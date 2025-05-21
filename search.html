@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar Example</title>
+    <style>
+       .search-container {
+            width: 300px;
+            position: relative;
+        }
+        #searchInput {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 16px;
+            -webkit-appearance: searchfield; /* For Safari */
+            -moz-appearance: searchfield; /* For Firefox */
+            appearance: searchfield;
+        }
+        #searchInput::-webkit-search-cancel-button,
+        #searchInput::-webkit-search-decoration,
+        #searchInput::-webkit-search-done-button,
+        #searchInput::-webkit-search-input,
+        #searchInput::-webkit-search-clear-button {
+            -webkit-appearance: none; /* Remove default styles in WebKit browsers */
+        }
+        .results {
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            max-height: 200px;
+            overflow-y: auto;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .results div {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .results div:last-child {
+            border-bottom: none;
+        }
+        .results div a {
+            text-decoration: none;
+            color: #333;
+        }
+        .results div:hover {
+            background-color: #f1f1f1;
+        }
+        .no-results {
+            padding: 10px;
+            color: #999;
+            text-align: center;
+        }   
+    </style>
+
+</head>
+<body>
+    <div class="search-container">
+        <input type="search" id="searchInput" placeholder="Search for pages...">
+        <div class="results" id="resultsContainer"></div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--owl-carousal-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--progress-bar js-->
+    <script src="js/progressbar.js"></script>
+    <!--isotope js-->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!--countTo js-->
+    <script src="js/jquery.countTo.min.js"></script>
+    <!--Maginfic-Popup js-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Animation JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Rev-Slider -->
+    <script src="rev/js/rbtools.min.js"></script>
+    <script src="rev/js/rs6.min.js"></script>
+    <script src="js/rev-custom.js"></script>
+    <!--custom js-->
+    <script src="js/custom.js"></script>
+</body>
+</html>
